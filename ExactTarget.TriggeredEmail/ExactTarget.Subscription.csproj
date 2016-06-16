@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\sitecore\Website\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -77,9 +77,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Trigger\EmailTrigger.cs" />
-    <Compile Include="Trigger\ExactTargetTriggeredEmail.cs" />
-    <Compile Include="Trigger\IEmailTrigger.cs" />
+    <Compile Include="Trigger\ISubscriber.cs" />
+    <Compile Include="Trigger\Subscriber.cs" />
+    <Compile Include="Trigger\ExactTargetSubscriber.cs" />
     <Compile Include="Trigger\Priority.cs" />
   </ItemGroup>
   <ItemGroup>

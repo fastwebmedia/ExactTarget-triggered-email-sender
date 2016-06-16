@@ -55,9 +55,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExactTarget.TriggeredEmail\ExactTarget.TriggeredEmail.csproj">
+    <ProjectReference Include="..\ExactTarget.TriggeredEmail\ExactTarget.Subscription.csproj">
       <Project>{1d8ffebd-a1ab-41a3-b0e6-0c7301978a3b}</Project>
-      <Name>ExactTarget.TriggeredEmail</Name>
+      <Name>ExactTarget.Subscription</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
