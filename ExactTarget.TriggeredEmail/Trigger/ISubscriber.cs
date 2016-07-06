@@ -1,5 +1,5 @@
 ﻿using ExactTarget.Subcription;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
+using ExactTarget.Subscription.ExactTargetApi;
 
 namespace ExactTarget.Subscription
 {

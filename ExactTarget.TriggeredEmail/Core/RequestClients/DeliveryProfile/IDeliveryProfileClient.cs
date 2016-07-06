@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExactTarget.TriggeredEmail.Core.RequestClients.DeliveryProfile
+namespace ExactTarget.Subscription.Core.RequestClients.DeliveryProfile
 {
     public interface IDeliveryProfileClient : IDisposable
     {

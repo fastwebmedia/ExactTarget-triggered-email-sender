@@ -1,7 +1,7 @@
 ﻿using System;
-using ExactTarget.TriggeredEmail.Core;
-using ExactTarget.TriggeredEmail.Core.Exceptions;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
+using ExactTarget.Subscription.Core;
+using ExactTarget.Subscription.Core.Exceptions;
+using ExactTarget.Subscription.ExactTargetApi;
 using NUnit.Framework;
 
 namespace ExactTarget.TriggeredEmail.Test.Unit.Trigger

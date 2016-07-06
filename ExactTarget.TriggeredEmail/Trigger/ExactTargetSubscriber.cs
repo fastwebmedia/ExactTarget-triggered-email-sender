@@ -5,6 +5,14 @@ namespace ExactTarget.Subcription
 {
     public class ExactTargetSubscriber
     {
+        public string EmailAddress { get; private set; }
+
+        public string SubscriberKey { get; set; }
+
+        public string ExternalKey { get; private set; }
+
+        public Dictionary<string, string> ReplacementValues { get; private set; }
+
         public ExactTargetSubscriber(string externalKey, string emailAddress)
         {
             if (string.IsNullOrEmpty(externalKey))
@@ -19,14 +27,6 @@ namespace ExactTarget.Subcription
             EmailAddress = emailAddress;
             ReplacementValues = new Dictionary<string, string>();
         }
-
-        public string EmailAddress { get; private set; }
-
-        public string SubscriberKey { get; set; }
-
-        public string ExternalKey { get; private set; }
-
-        public Dictionary<string, string> ReplacementValues { get; private set; }
 
         public ExactTargetSubscriber AddReplacementValue(string key, string value)
         {

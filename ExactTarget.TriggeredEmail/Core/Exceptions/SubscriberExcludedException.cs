@@ -1,4 +1,4 @@
-﻿namespace ExactTarget.TriggeredEmail.Core.Exceptions
+﻿namespace ExactTarget.Subscription.Core.Exceptions
 {
     public class SubscriberExcludedException : ExactTargetException
     {

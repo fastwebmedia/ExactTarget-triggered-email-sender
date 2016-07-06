@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExactTarget.TriggeredEmail.Core.RequestClients.Shared
+namespace ExactTarget.Subscription.Core.RequestClients.Shared
 {
     public interface ISharedCoreRequestClient : IDisposable
     {

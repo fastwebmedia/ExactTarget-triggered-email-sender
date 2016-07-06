@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using ExactTarget.EmailFromTemplateCreator;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
-using IExactTargetConfiguration = ExactTarget.TriggeredEmail.Core.Configuration.IExactTargetConfiguration;
+using ExactTarget.Subscription.ExactTargetApi;
+using IExactTargetConfiguration = ExactTarget.Subscription.Core.Configuration.IExactTargetConfiguration;
 using System.Linq;
 
-namespace ExactTarget.TriggeredEmail.Core.RequestClients.Email
+namespace ExactTarget.Subscription.Core.RequestClients.Email
 {
     public class EmailRequestClient : IEmailRequestClient
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ExactTarget.TriggeredEmail.Core.RequestClients.DataExtension
+namespace ExactTarget.Subscription.Core.RequestClients.DataExtension
 {
     public interface IDataExtensionClient : IDisposable
     {

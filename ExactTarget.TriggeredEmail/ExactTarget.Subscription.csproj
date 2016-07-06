@@ -7,8 +7,8 @@
     <ProjectGuid>{1D8FFEBD-A1AB-41A3-B0E6-0C7301978A3B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExactTarget.TriggeredEmail</RootNamespace>
-    <AssemblyName>ExactTarget.TriggeredEmail</AssemblyName>
+    <RootNamespace>ExactTarget.Subscription</RootNamespace>
+    <AssemblyName>ExactTarget.Subscription</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\ExactTarget.TriggeredEmail.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\ExactTarget.Subscription.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExactTarget.EmailFromTemplateCreator">
@@ -55,22 +55,12 @@
     <Compile Include="Core\Configuration\IExactTargetConfiguration.cs" />
     <Compile Include="Core\RequestClients\DataExtension\DataExtensionClient.cs" />
     <Compile Include="Core\RequestClients\DataExtension\IDataExtensionClient.cs" />
-    <Compile Include="Core\RequestClients\EmailTemplate\EmailTemplateClient.cs" />
-    <Compile Include="Core\RequestClients\EmailTemplate\IEmailTemplateClient.cs" />
     <Compile Include="Core\RequestClients\Email\EmailRequestClient.cs" />
     <Compile Include="Core\RequestClients\Email\IEmailRequestClient.cs" />
     <Compile Include="Core\ExactTargetResultChecker.cs" />
     <Compile Include="Core\ExternalKeyGenerator.cs" />
     <Compile Include="Core\RequestClients\Shared\ISharedCoreRequestClient.cs" />
     <Compile Include="Core\RequestClients\Shared\SharedCoreRequestClient.cs" />
-    <Compile Include="Core\RequestClients\TriggeredSendDefinition\ITriggeredSendDefinitionClient.cs" />
-    <Compile Include="Core\RequestClients\TriggeredSendDefinition\TriggeredSendDefinitionClient.cs" />
-    <Compile Include="Creation\Creators\IEmailCreator.cs" />
-    <Compile Include="Creation\Creators\LayoutHtmlReplacementFieldNameParser.cs" />
-    <Compile Include="Creation\Creators\PasteHtmlEmailCreator.cs" />
-    <Compile Include="Creation\Creators\TemplatedEmailCreator.cs" />
-    <Compile Include="Creation\ITriggeredEmailCreator.cs" />
-    <Compile Include="Creation\TriggeredEmailCreator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ExactTargetApi\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -92,79 +82,79 @@
     <None Include="Service References\ExactTargetApi\ETFrameworkFault.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.APIObject.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.APIObject.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ConfigureResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ConfigureResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ConfigureResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ConfigureResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.CreateResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.CreateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.CreateResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.CreateResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.DeleteResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.DeleteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.DeleteResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.DeleteResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.DescribeResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.DescribeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ExecuteResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ExecuteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ExecuteResponse1.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ExecuteResponse1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ExtractResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ExtractResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ExtractResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ExtractResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.GetSystemStatusResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.GetSystemStatusResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ObjectDefinition.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ObjectDefinition.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.PerformResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.PerformResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.PerformResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.PerformResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.QueryResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.QueryResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.RetrieveResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.RetrieveResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ScheduleResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ScheduleResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.ScheduleResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.ScheduleResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.SystemStatusResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.SystemStatusResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.UpdateResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.UpdateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.UpdateResult.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.UpdateResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.VersionInfoResponse.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.VersionInfoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ExactTargetApi\ExactTarget.TriggeredEmail.ExactTargetApi.VersionInfoResponse1.datasource">
+    <None Include="Service References\ExactTargetApi\ExactTarget.Subscription.ExactTargetApi.VersionInfoResponse1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
@@ -183,7 +173,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

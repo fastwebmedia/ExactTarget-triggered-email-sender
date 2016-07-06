@@ -1,22 +1,23 @@
-﻿using ExactTarget.TriggeredEmail.Core.Configuration;
+﻿using ExactTarget.Subscription.Core.Configuration;
 using NUnit.Framework;
 
-namespace ExactTarget.TriggeredEmail.Test.Integration
+namespace ExactTarget.Subscription.Test.Integration
 {
     [TestFixture]
     public class TestBase
     {
         public ExactTargetConfiguration Config {get; private set; }
-        public string TestRecipientEmail { get; private set; }
+        public string TestSubscriberEmail { get; private set; }
+        public int TestListId { get; private set; }
 
         [TestFixtureSetUp]
         public void TestFixtureSetUp()
         {
-            TestRecipientEmail = "";
+            TestSubscriberEmail = "";
 
-            if (string.IsNullOrWhiteSpace(TestRecipientEmail))
+            if (string.IsNullOrWhiteSpace(TestSubscriberEmail))
             {
-                Assert.Fail("You have to supply value for TestRecipientEmail before running these tests.");
+                Assert.Fail("You have to supply value for TestSubscriberEmail before running these tests.");
             }
 
             Config = new ExactTargetConfiguration

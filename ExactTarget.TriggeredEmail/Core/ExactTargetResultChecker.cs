@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using ExactTarget.TriggeredEmail.Core.Exceptions;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
+using ExactTarget.Subscription.Core.Exceptions;
+using ExactTarget.Subscription.ExactTargetApi;
 
-namespace ExactTarget.TriggeredEmail.Core
+namespace ExactTarget.Subscription.Core
 {
     public class ExactTargetResultChecker
     {

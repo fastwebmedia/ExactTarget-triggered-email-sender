@@ -1,7 +1,7 @@
-﻿using ExactTarget.TriggeredEmail.Core.Configuration;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
+﻿using ExactTarget.Subscription.Core.Configuration;
+using ExactTarget.Subscription.ExactTargetApi;
 
-namespace ExactTarget.TriggeredEmail.Core
+namespace ExactTarget.Subscription.Core
 {
     public class SoapClientFactory
     {

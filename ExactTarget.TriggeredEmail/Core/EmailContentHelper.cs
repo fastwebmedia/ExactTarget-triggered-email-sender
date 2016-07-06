@@ -1,4 +1,4 @@
-﻿namespace ExactTarget.TriggeredEmail.Core
+﻿namespace ExactTarget.Subscription.Core
 {
     public class EmailContentHelper
     {

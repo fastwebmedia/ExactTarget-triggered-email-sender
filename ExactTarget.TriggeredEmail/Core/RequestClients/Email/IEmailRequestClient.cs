@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ExactTarget.TriggeredEmail.Core.RequestClients.Email
+namespace ExactTarget.Subscription.Core.RequestClients.Email
 {
     public interface IEmailRequestClient : IDisposable
     {

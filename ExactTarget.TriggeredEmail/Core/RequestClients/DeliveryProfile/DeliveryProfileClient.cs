@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using ExactTarget.TriggeredEmail.Core.Configuration;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
+using ExactTarget.Subscription.Core.Configuration;
+using ExactTarget.Subscription.ExactTargetApi;
 
-namespace ExactTarget.TriggeredEmail.Core.RequestClients.DeliveryProfile
+namespace ExactTarget.Subscription.Core.RequestClients.DeliveryProfile
 {
     public class DeliveryProfileClient : IDeliveryProfileClient
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ExactTarget.TriggeredEmail.Core;
-using ExactTarget.TriggeredEmail.Core.Configuration;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
-using Attribute = ExactTarget.TriggeredEmail.ExactTargetApi.Attribute;
+using ExactTarget.Subscription.Core;
+using ExactTarget.Subscription.Core.Configuration;
+using ExactTarget.Subscription.ExactTargetApi;
+using Attribute = ExactTarget.Subscription.ExactTargetApi.Attribute;
 using ExactTarget.Subcription;
 using System;
 
@@ -49,13 +49,15 @@ namespace ExactTarget.Subscription
 
                 foreach (int listId in listIdArray)
                 {
+                    listEnumerator.MoveNext();
+
                     SubscriberList list = new SubscriberList();
 
                     list.ID = listId;
                     list.IDSpecified = true;
 
+                    subscriber.Lists = new SubscriberList[listIdArray.Length];
                     subscriber.Lists[Convert.ToInt32(listEnumerator.Current)] = list;
-                    listEnumerator.MoveNext();
                 }
             }
             
@@ -63,7 +65,7 @@ namespace ExactTarget.Subscription
             {
                 RequestType = requestQueueing == RequestQueueing.No ? RequestType.Synchronous : RequestType.Asynchronous,
                 RequestTypeSpecified = true,
-                QueuePriority = priority == Priority.High ? TriggeredEmail.ExactTargetApi.Priority.High : TriggeredEmail.ExactTargetApi.Priority.Medium,
+                QueuePriority = priority == Priority.High ? Priority.High : Priority.Medium,
                 QueuePrioritySpecified = true,
                 PrioritySpecified = true,
                 Priority = (sbyte)(priority == Priority.High ? 2 : 1),

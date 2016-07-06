@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ExactTarget.TriggeredEmail.Core.Configuration;
-using ExactTarget.TriggeredEmail.Core.RequestClients.Shared;
-using ExactTarget.TriggeredEmail.ExactTargetApi;
+using ExactTarget.Subscription.Core.Configuration;
+using ExactTarget.Subscription.Core.RequestClients.Shared;
+using ExactTarget.Subscription.ExactTargetApi;
 
-namespace ExactTarget.TriggeredEmail.Core.RequestClients.DataExtension
+namespace ExactTarget.Subscription.Core.RequestClients.DataExtension
 {
     public class DataExtensionClient : IDataExtensionClient
     {

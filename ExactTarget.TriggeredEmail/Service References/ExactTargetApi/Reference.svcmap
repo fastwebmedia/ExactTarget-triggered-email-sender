@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1a17098f-581c-4d5e-9633-c32ecfd3abda" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cfeace3a-31a8-41c2-a8c0-1255d0acff6f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="https://webservice.s6.exacttarget.com/etframework.wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="etframework.wsdl" MetadataType="Wsdl" ID="3652c6d6-ab24-4368-8493-746c8b6dcda0" SourceId="1" SourceUrl="https://webservice.s6.exacttarget.com/etframework.wsdl" />
-    <MetadataFile FileName="ETFrameworkFault.xsd" MetadataType="Schema" ID="c6ab1afe-882d-48c7-ac48-351d08c4d8d8" SourceId="1" SourceUrl="https://webservice.exacttarget.com/ETFrameworkFault.xsd" />
+    <MetadataFile FileName="etframework.wsdl" MetadataType="Wsdl" ID="21fa9f80-99d7-4f02-a210-2deb86410063" SourceId="1" SourceUrl="https://webservice.s6.exacttarget.com/etframework.wsdl" />
+    <MetadataFile FileName="ETFrameworkFault.xsd" MetadataType="Schema" ID="d8da22d9-4c70-4418-83c1-afe9a980e251" SourceId="1" SourceUrl="https://webservice.exacttarget.com/ETFrameworkFault.xsd" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
